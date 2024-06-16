@@ -1,4 +1,4 @@
-`// one method is the normmal double for loop method with TC O(m*n) & SC O(1)
+// one method is the normmal double for loop method with TC O(m*n) & SC O(1)
 // trie
 
 class TrieNode
