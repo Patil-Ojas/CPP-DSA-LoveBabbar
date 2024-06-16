@@ -1,0 +1,1 @@
+// pretty much instead of discarding the option we have checked, we kkeep on hcecking it again and again for each possible use case
