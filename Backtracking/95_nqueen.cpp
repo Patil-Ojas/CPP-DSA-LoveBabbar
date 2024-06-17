@@ -1,6 +1,6 @@
 #include <bits/stdc++.h> 
 
-// a more optimized approach is by using hashmaps, for rows its easy for diagnoals is using (row+col) indice, lower and upper diagonal separate
+// a more optimized approach is by using hashmaps, for rows its easy for diagnoals is using (row+col) indice, lower and upper diagonal separate, one hashmap each
 
 
 void fillans(vector<vector<int>> &board, vector<vector<int>> &ans, int n)
