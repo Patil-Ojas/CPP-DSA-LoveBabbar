@@ -4,7 +4,7 @@
 
 // tc - linear
 
-bool isCycle(unordered_map<int, list<int>> &adj, unordered_map<int, bool> &visited, int src)
+bool isCycleBFS(unordered_map<int, list<int>> &adj, unordered_map<int, bool> &visited, int src)
 {
     queue<int> q;
     q.push(src);
@@ -54,7 +54,7 @@ string cycleDetection (vector<vector<int>>& edges, int n, int m)
     {
         if (!visited[i])
         {
-            bool ans = isCycle(adj, visited, i);
+            bool ans = isCycleBFS(adj, visited, i);
             if (ans)
                 return "Yes";
         }
