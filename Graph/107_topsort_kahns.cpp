@@ -1,4 +1,6 @@
 // kahsn algorithm or bfs 
+// TC - O(N+E)
+// SC - O(N+E)
 
 #include <bits/stdc++.h> 
 
