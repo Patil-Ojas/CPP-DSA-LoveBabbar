@@ -2,6 +2,8 @@
 // then create parent
 // then use bfs, cuz bfs inheritantly takes smallest path
 
+// TC - O(N+E)
+// SC - O(N+E)
 #include <unordered_map>
 #include <queue>
 #include <list>
