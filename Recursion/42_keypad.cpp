@@ -14,7 +14,7 @@ public:
         }
 
         int num = digits[index] - '0';
-        string value = mapping[num];
+        string value = mapping[num];        
 
         for (int i=0; i<value.length(); i++)
         {
