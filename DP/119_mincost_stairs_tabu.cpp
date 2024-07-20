@@ -4,6 +4,7 @@
 // step 2 -> dp[0] and dp[1], base cases
 // step 3 -> define for loop limits
 
+// if you wanna optimize space, just use variable
 class Solution {
 public:
     int solve3000(vector<int> &cost, int n)
