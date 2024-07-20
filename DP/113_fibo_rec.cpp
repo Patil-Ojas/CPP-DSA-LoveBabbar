@@ -5,6 +5,9 @@
 
 // we use dp when we can get the optimized solution of a problem using the solution of a sub-section of the problem
 
+// tc -> O(n)
+// sc -> O(n)
+
 #include<bits/stdc++.h>
 using namespace std;
 
