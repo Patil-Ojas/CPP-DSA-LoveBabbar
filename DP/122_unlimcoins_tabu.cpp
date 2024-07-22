@@ -1,5 +1,9 @@
 #include <bits/stdc++.h> 
 
+// tc - O(n*x)
+// space optimiztion is not possible in this case
+
+
 int solveRec(vector<int> &num, int x)
 {
     // base case
