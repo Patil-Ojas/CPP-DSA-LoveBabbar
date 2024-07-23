@@ -1,4 +1,7 @@
-
+//  rec and mem and tab -> tc O(n)
+//  rec and mem -> sc O(n)+O(n)
+// tab sc -> O(n)
+// space optimization possible but we move
 
 #include <bits/stdc++.h> 
 int solveRec(vector<int> &nums, int n)
@@ -33,13 +36,35 @@ int solveMem(vector<int> &nums, int n, vector<int> &dp)
     return dp[n];
 }
 
+
+int solveTab(vector<int> &nums, int n)
+{
+    vector<int> dp(n+1);
+    dp[0] = nums[0];
+    dp[1] = max(nums[0], nums[1]);
+
+    for(int i=2; i<=n;i++)
+    {
+        int incl = dp[i-2] + nums[i];
+        int excl = dp[i-1];
+        dp[i] = max(incl, excl);
+    }
+    return dp[n];
+}
+
+
+
+
 int maximumNonAdjacentSum(vector<int> &nums){
     // int n = nums.size();
     // int ans = solveRec(nums, n-1);
 
+    // int n = nums.size();
+    // vector<int> dp(n+1, -1);
+    // int ans = solveMem(nums, n-1, dp);
+
     int n = nums.size();
-    vector<int> dp(n+1, -1);
-    int ans = solveMem(nums, n-1, dp);
+    int ans = solveTab(nums, n-1);
 
     return ans;
 }
